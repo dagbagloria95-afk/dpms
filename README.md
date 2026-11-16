@@ -9,10 +9,10 @@ SMS personnalisés. Les distributeurs n'ont aucun compte : ils reçoivent unique
 |---|---|---|
 | `packages/core` | Lecture du modèle Excel, calcul des KPI, SMS (modèles, comptage) | ✅ Fait, testé |
 | `supabase/migrations` | Base de données, sécurité, import, campagnes, passerelle SMS | ✅ Fait, testé |
-| `apps/web` | Plateforme d'administration (Next.js, Vercel) | ⏳ Étape 3 |
+| `apps/web` | Plateforme d'administration (Next.js, Vercel) : connexion, tableau de bord, import Excel, distributeurs | ✅ Étape 3 (SMS : étape 4) |
 | `apps/mobile` | Application Android admin et passerelle SMS (Expo) | ⏳ Étape 5 |
 
-Voir [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md).
+Voir [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) et la mise en ligne pas à pas : [docs/DEPLOIEMENT.md](docs/DEPLOIEMENT.md).
 
 ## Commandes
 

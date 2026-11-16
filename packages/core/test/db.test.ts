@@ -6,8 +6,8 @@ import { readFileSync, readdirSync } from "node:fs";
 import { join } from "node:path";
 import { PGlite } from "@electric-sql/pglite";
 import { beforeAll, describe, expect, it } from "vitest";
-import { buildImportPayload, computePerformance, parseMonthlyWorkbook } from "../src/index.js";
-import { buildFixture } from "./buildFixture.js";
+import { buildImportPayload, computePerformance, parseMonthlyWorkbook } from "../src/index";
+import { buildFixture } from "./buildFixture";
 
 const MIGRATIONS = join(__dirname, "../../../supabase/migrations");
 const ADMIN = "00000000-0000-0000-0000-00000000a001";

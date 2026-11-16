@@ -10,3 +10,4 @@ dist/
 # Fichiers Excel réels (données personnelles des distributeurs) : jamais dans le dépôt
 *.xlsx
 !packages/core/test/fixtures/*.xlsx
+*.tsbuildinfo

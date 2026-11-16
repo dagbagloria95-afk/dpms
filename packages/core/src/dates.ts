@@ -1,4 +1,4 @@
-import type { IsoDate, PeriodCode } from "./types.js";
+import type { IsoDate, PeriodCode } from "./types";
 
 const FR_MONTHS = [
   "JANVIER", "FEVRIER", "MARS", "AVRIL", "MAI", "JUIN",

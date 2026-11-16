@@ -1,4 +1,4 @@
-import { dayOfMonth, daysInMonth } from "../dates.js";
+import { dayOfMonth, daysInMonth } from "../dates";
 import {
   DEFAULT_KPI_SETTINGS,
   type DailySale,
@@ -10,7 +10,7 @@ import {
   type PerformanceReport,
   type PeriodCode,
   type WeekBucket,
-} from "../types.js";
+} from "../types";
 
 export interface PerformanceInput {
   period: PeriodCode;
@@ -128,10 +128,14 @@ function buildKpi(
     projectionFinMois: round2(moyenne * ctx.nbDays),
     semaines: ctx.weeks.map((w) => {
       const set = new Set(w.dates);
-      return {
-        label: w.label,
-        realise: round2(sales.filter((s) => set.has(s.date)).reduce((a, s) => a + s.amount, 0)),
-      };
+      let zebra = 0;
+      let dw = 0;
+      for (const s of sales) {
+        if (!set.has(s.date)) continue;
+        if (s.product === "zebra") zebra += s.amount;
+        else dw += s.amount;
+      }
+      return { label: w.label, realise: round2(zebra + dw), zebra: round2(zebra), dw: round2(dw) };
     }),
   };
 }

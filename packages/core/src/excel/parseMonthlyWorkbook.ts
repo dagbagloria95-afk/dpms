@@ -1,7 +1,7 @@
 import ExcelJS from "exceljs";
 import type { Worksheet } from "exceljs";
-import { periodFromSheetName, periodOf, toIsoDate } from "../dates.js";
-import { normalizeCarPhone } from "../phone.js";
+import { periodFromSheetName, periodOf, toIsoDate } from "../dates";
+import { normalizeCarPhone } from "../phone";
 import type {
   DailySale,
   ImportIssue,
@@ -10,8 +10,8 @@ import type {
   ParsedMonthlyWorkbook,
   Product,
   WeekBucket,
-} from "../types.js";
-import { cellNumber, cellText, excelSerialToDate, normalizeLabel, plainValue } from "./cell.js";
+} from "../types";
+import { cellNumber, cellText, excelSerialToDate, normalizeLabel, plainValue } from "./cell";
 
 /**
  * Lecture du modèle mensuel de suivi (ex. feuille "NOVEMBRE 2025") :

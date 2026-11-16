@@ -1,5 +1,5 @@
-import { periodLabel } from "../dates.js";
-import type { DistributorPerformance, PerformanceReport } from "../types.js";
+import { periodLabel } from "../dates";
+import type { DistributorPerformance, PerformanceReport } from "../types";
 
 /** Variables disponibles dans les modèles de SMS : {{nom}}, {{taux}}… */
 export const SMS_VARIABLES = {

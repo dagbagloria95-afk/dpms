@@ -9,8 +9,8 @@ import {
   smsSegments,
   toGsmFriendly,
   unknownVariables,
-} from "../src/index.js";
-import { buildFixture, type FixtureDistributor } from "./buildFixture.js";
+} from "../src/index";
+import { buildFixture, type FixtureDistributor } from "./buildFixture";
 
 const sample: FixtureDistributor[] = [
   { region: "Région A", name: "ALPHA COM", phone: 70000001, city: "BANGUI", objHt: 1_000_000,

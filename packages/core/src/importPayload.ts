@@ -1,4 +1,4 @@
-import type { ParsedMonthlyWorkbook, PerformanceReport } from "./types.js";
+import type { ParsedMonthlyWorkbook, PerformanceReport } from "./types";
 
 /**
  * Prépare l'argument de la fonction SQL `apply_monthly_import(p jsonb)`

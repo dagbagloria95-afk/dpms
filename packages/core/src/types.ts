@@ -79,7 +79,7 @@ export interface KpiValues {
   /** Projection fin de mois au rythme actuel. */
   projectionFinMois: number;
   /** Réalisé TTC par semaine (même ordre que `weeks`). */
-  semaines: { label: string; realise: number }[];
+  semaines: { label: string; realise: number; zebra: number; dw: number }[];
 }
 
 export interface DistributorPerformance extends KpiValues {
